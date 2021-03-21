@@ -1,5 +1,16 @@
 * {
-  background-color: rgb(20, 7, 7);
+  background-color: rgb(97, 37, 37);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(224, 212, 188);
+}
+
+a {
+  color: #06927d;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+a:hover{
+  font-style: italic;
+  color: inherit;
 }

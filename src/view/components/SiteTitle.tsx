@@ -1,3 +1,9 @@
+import { Link } from "react-router-dom";
+
 export default function SiteTitle() {
-  return <h1>CA Kit Tools</h1>;
+  return (
+    <Link to="/">
+      <h1>CA Kit Tools</h1>
+    </Link>
+  );
 }
