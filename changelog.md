@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1 - 2021-03-21
+### Fixed
+- Uses component call rather than function call
+
 ## 0.2.0 - 2021-03-21
 ### Added
 - Converts complex numbers from rectangular form to polar

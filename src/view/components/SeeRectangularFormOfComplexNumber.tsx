@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
-import { ComplexNumber } from "../../model/Math/ComplexNumber";
+import { ComplexNumberLookAtUI } from "../../model/interfaces/ComplexNumberLookAtUI";
 
 export function SeeRectangularFormOfComplexNumber(
-  complexNumber: ComplexNumber
+  props: ComplexNumberLookAtUI
 ) {
   const [isImaginaryNegative, setIsImaginaryNegative] = useState(false);
 
   useEffect(() => {
-    if (complexNumber.imaginary < 0) setIsImaginaryNegative(true);
+    if (props.imaginaryValue < 0) setIsImaginaryNegative(true);
     else setIsImaginaryNegative(false);
-  }, [complexNumber]);
+  }, [props]);
 
   return (
     <p>
-      Rectangular Format: {complexNumber.real}
+      Rectangular Format: {props.realValue}
       {!isImaginaryNegative && "+"}
-      {complexNumber.imaginary}j
+      {props.imaginaryValue}j
     </p>
   );
 }

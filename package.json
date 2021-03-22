@@ -1,7 +1,7 @@
 {
   "name": "ca-kit-tools",
   "description": "Web app to math operations with complex numbers. This will help so much in the circuits classes.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "dependencies": {
     "@types/node": "^12.20.6",

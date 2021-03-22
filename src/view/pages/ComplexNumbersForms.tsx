@@ -13,7 +13,8 @@ export default function ComplexNumbersForms() {
   );
 
   useEffect(() => {
-    setComplexNumber1(new ComplexNumber(realValueNum1, imaginaryValueNum1));
+    const temp = new ComplexNumber(realValueNum1, imaginaryValueNum1);
+    setComplexNumber1(temp);
   }, [realValueNum1, imaginaryValueNum1]);
 
   return (
@@ -33,11 +34,15 @@ export default function ComplexNumbersForms() {
         </section>
         <section>
           <h2>Forms</h2>
-          {SeeRectangularFormOfComplexNumber(complexNumber1)}
-          <p>Polar: {complexNumber1.module} /_{complexNumber1.angle}</p>          
+          <SeeRectangularFormOfComplexNumber
+            imaginaryValue={complexNumber1.imaginary}
+            realValue={complexNumber1.real}
+          />
+          <p>
+            Polar: {complexNumber1.module} /_{complexNumber1.angle}
+          </p>
         </section>
       </main>
     </div>
   );
 }
-
