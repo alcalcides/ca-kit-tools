@@ -39,7 +39,7 @@ export default function ComplexNumbersForms() {
             realValue={complexNumber1.real}
           />
           <p>
-            Polar: {complexNumber1.module} /_{complexNumber1.angle}
+            Polar: {complexNumber1.module} /_{complexNumber1.angle*180/Math.PI}°
           </p>
         </section>
       </main>
