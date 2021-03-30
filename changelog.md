@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3 - 2021-03-30
+### Changed
+- Lauches component to show polar form
+
 ## 0.2.2 - 2021-03-23
 ### Changed
 - Angle is now in degrees

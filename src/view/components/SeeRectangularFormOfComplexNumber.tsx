@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ComplexNumberLookAtUI } from "../../model/interfaces/ComplexNumberLookAtUI";
+import { ComplexNumberLookAtUI } from "../../model/interfaces/ComplexNumberLookAtUIAsRectangular";
 
 export function SeeRectangularFormOfComplexNumber(
   props: ComplexNumberLookAtUI

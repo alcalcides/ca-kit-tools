@@ -8,3 +8,7 @@ export function calculatesBetterAngle(imaginary: number, real: number): number {
 export function arttg(imaginary: number, real: number) {
   return Math.atan(imaginary / real);
 }
+
+export function radianosToDegrees(angle: number) {
+  return angle * 180 / Math.PI;
+}

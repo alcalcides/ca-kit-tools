@@ -4,6 +4,7 @@ import ComplexNumberRectangularInput from "../components/ComplexNumberRectangula
 import PageTitle from "../components/PageTitle";
 import SiteTitle from "../components/SiteTitle";
 import { SeeRectangularFormOfComplexNumber } from "../components/SeeRectangularFormOfComplexNumber";
+import { SeePolarFormOfComplexNumber } from "../components/SeePolarFormOfComplexNumber";
 
 export default function ComplexNumbersForms() {
   const [realValueNum1, setRealValueNum1] = useState(0);
@@ -38,9 +39,10 @@ export default function ComplexNumbersForms() {
             imaginaryValue={complexNumber1.imaginary}
             realValue={complexNumber1.real}
           />
-          <p>
-            Polar: {complexNumber1.module} /_{complexNumber1.angle*180/Math.PI}°
-          </p>
+          <SeePolarFormOfComplexNumber 
+            module={complexNumber1.module}
+            angle={complexNumber1.angle} 
+          />
         </section>
       </main>
     </div>
